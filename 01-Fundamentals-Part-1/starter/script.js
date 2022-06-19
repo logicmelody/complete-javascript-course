@@ -65,3 +65,18 @@ console.log(typeof null);
 // BigInt (ES2020)
 */
 
+let age = 30;
+age = 31;
+
+const birthYear = 1991;
+// birthYear = 1990;
+
+// const job;
+
+// Never use var!!!
+var job = 'programmer';
+job = 'teacher';
+
+// Never write code like this!!!
+lastName = 'Lin';
+console.log(lastName);
