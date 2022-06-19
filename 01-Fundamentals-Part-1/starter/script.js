@@ -22,7 +22,6 @@ console.log(firstName);
 console.log(firstName);
 console.log(firstName);
 console.log(myFirstJob);
-*/
 
 // Primitive data types
 // Number
@@ -64,3 +63,5 @@ console.log(typeof null);
 // Symbol (ES2015)
 
 // BigInt (ES2020)
+*/
+
