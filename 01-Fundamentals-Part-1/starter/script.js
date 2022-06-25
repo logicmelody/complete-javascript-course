@@ -22,7 +22,9 @@ console.log(firstName);
 console.log(firstName);
 console.log(firstName);
 console.log(myFirstJob);
+*/
 
+/*
 // Primitive data types
 // Number
 let age = 23;
@@ -65,6 +67,7 @@ console.log(typeof null);
 // BigInt (ES2020)
 */
 
+/*
 let age = 30;
 age = 31;
 
@@ -80,3 +83,5 @@ job = 'teacher';
 // Never write code like this!!!
 lastName = 'Lin';
 console.log(lastName);
+*/
+
