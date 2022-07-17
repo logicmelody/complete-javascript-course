@@ -237,6 +237,7 @@ if (height) {
 }
 */
 
+/*
 // === strict，不會進行 type coercion
 // ==，會進行 type coercion，不要使用！
 const age = '18';
@@ -271,3 +272,30 @@ if (favorite === 23) { // 23 === 23
 if (favorite !== 23) {
 	console.log('Why not 23?');
 }
+*/
+
+const hasDrviersLicense = true; // A
+const hasGoodVision = true; // B
+
+console.log(hasDrviersLicense && hasGoodVision);
+console.log(hasDrviersLicense || hasGoodVision);
+console.log(!hasDrviersLicense);
+
+// if (hasDrviersLicense && hasGoodVision) {
+// 	console.log('Sarah is able to drive!');
+
+// } else {
+// 	console.log('Someone else should drive...');
+// }
+
+const isTired = false; // C
+
+console.log(hasDrviersLicense && hasGoodVision && isTired);
+
+if (hasDrviersLicense && hasGoodVision && !isTired) {
+	console.log('Sarah is able to drive!');
+
+} else {
+	console.log('Someone else should drive...');
+}
+
