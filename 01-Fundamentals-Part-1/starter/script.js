@@ -209,9 +209,9 @@ console.log(2 + 3 + 4 + '5'); // 95
 console.log('10' - '4' - '3' - 2 + '5'); // 15
 */
 
+/*
 // 5 falsy values: 0, '', undefined, null, NaN
 // falsy values: 經過 type coercion，會被轉換成 false 的 boolean
-
 console.log(Boolean(0));
 console.log(Boolean(undefined));
 console.log(Boolean('Jonas'));
@@ -234,4 +234,40 @@ if (height) {
 
 } else {
 	console.log("Height is UNDEFINED");
+}
+*/
+
+// === strict，不會進行 type coercion
+// ==，會進行 type coercion，不要使用！
+const age = '18';
+
+if (age === 18) {
+	console.log('You just became an adult (strict)');
+}
+
+if (age == 18) {
+	console.log('You just became an adult (loose)');
+}
+
+// prompt()，回傳的 type 是一個 string
+const favorite = Number(prompt("What's your favorite number?"));
+
+console.log(favorite);
+console.log(typeof favorite);
+
+if (favorite === 23) { // 23 === 23
+	console.log('Cool! 23 is an amazing number');
+
+} else if (favorite === 7) {
+	console.log('7 is also a cool number');
+
+} else if (favorite === 9) {
+	console.log('9 is also a cool number');
+
+} else {
+	console.log('Number is not 23 or 7 or 9');
+}
+
+if (favorite !== 23) {
+	console.log('Why not 23?');
 }
