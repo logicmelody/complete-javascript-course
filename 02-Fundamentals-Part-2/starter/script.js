@@ -111,6 +111,7 @@ console.log(yearsUntilRetirement(1991, 'Jonas'));
 console.log(yearsUntilRetirement(1950, 'Mike'));
 */
 
+/*
 const friends1 = 'Michael';
 const friends2 = 'Steven';
 const friends3 = 'Peter';
@@ -155,3 +156,81 @@ console.log(age1, age2, age3);
 const ages = [calAge(years[0]), calAge(years[1]), calAge(years[years.length - 1])];
 
 console.log(ages);
+*/
+
+/*
+const friends = ['Michael', 'Steven', 'Peter'];
+
+// Add elements
+const newLength = friends.push('Jay');
+console.log(friends);
+console.log(newLength);
+
+friends.unshift('John');
+console.log(friends);
+
+// Remove elements
+friends.pop();
+
+const popped = friends.pop(); // Last
+console.log(popped);
+console.log(friends);
+
+friends.shift(); // First
+console.log(friends);
+
+console.log(friends.indexOf('Steven'));
+console.log(friends.indexOf('Bob'));
+
+friends.push(23);
+console.log(friends.includes('Steven'));
+console.log(friends.includes(23));
+
+if (friends.includes('Steven')) {
+	console.log('You have a friend called Steven');
+}
+*/
+
+/*
+const jonas = {
+	firstName: 'Jonas',
+	lastName: 'Schmedtmann',
+	age: 2037 - 1991,
+	job: 'teacher',
+	friends: ['Michael', 'Steven', 'Peter'],
+};
+*/
+
+const jonas = {
+	firstName: 'Jonas',
+	lastName: 'Schmedtmann',
+	age: 2037 - 1991,
+	job: 'teacher',
+	friends: ['Michael', 'Steven', 'Peter'],
+};
+
+console.log(jonas);
+console.log(jonas.lastName);
+console.log(jonas['lastName']);
+
+const nameKey = 'Name';
+console.log(jonas['first' + nameKey]);
+console.log(jonas['last' + nameKey]);
+
+const interestedIn = prompt('What do you want to know about Jonas? Choose between firstName, lastName, age, job, and friends');
+
+if (jonas[interestedIn]) {
+	console.log(jonas[interestedIn]);
+	
+} else {
+	console.log('Wrong request! Choose between firstName, lastName, age, job, and friends');
+}
+
+jonas.location = 'Portugal';
+jonas['twitter'] = '@jonasschmedtman';
+
+console.log(jonas);
+
+// Challenge
+// "Jonas has 3 friends, and his best friend is called Michael"
+console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`);
