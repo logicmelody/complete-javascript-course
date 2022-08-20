@@ -57,7 +57,16 @@ bills.forEach(bill => {
 	totals.push(tip + bill);
 });
 
+// for (let i = 0; i < bills.length; i++) {
+// 	const bill = bills[i];
+// 	const tip = calcTip(bill);
+
+// 	tips[i] = tip;
+// 	totals[i] = tip + bill;
+// }
+
 console.log('bills', bills);
 console.log('tips', tips);
 console.log('totals', totals);
+console.log('calcAverage tips', calcAverage(tips));
 console.log('calcAverage totals', calcAverage(totals));
