@@ -12,10 +12,10 @@ if (passTest) {
 if (hasDriversLicense) {
 	console.log('I can drive');
 }
+*/
 
 // const interface = 'Audio'; // 如果不是 strict mode 偵測不出來
 // const private = 543; // 如果不是 strict mode 偵測不出來
-*/
 
 /*
 function logger() {
