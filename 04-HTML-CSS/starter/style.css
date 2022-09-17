@@ -1,0 +1,38 @@
+* {
+	margin: 0;
+	padding: 0;
+
+	/* content-box: default，設定的 width 跟 height 不會包含 padding 跟 border */
+	/* border-box: 設定的 width 跟 height 會包含 padding 跟 border */
+	box-sizing: border-box;
+}
+
+body {
+	background-color: rgb(255, 247, 201);
+	font-family: Arial;
+
+	/* <h1> 跟 <h2> 有自己的屬性，所以這裡的 font-size 不會被 apply */
+	font-size: 20px;
+	padding: 50px;
+}
+
+h1 {
+	font-size: 40px;
+	margin-bottom: 25px;
+}
+
+h2 {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.first {
+	color: red;
+}
+
+#your-name {
+	background-color: rgb(255, 220, 105);
+	border: 5px solid #444;
+	width: 400px;
+	padding: 20px;
+}
