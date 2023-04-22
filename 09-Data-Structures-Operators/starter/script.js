@@ -5,7 +5,6 @@ const flights =
 	'_Delayed_Departure;fao93766109;txl2133758440;11:25+_Arrival;bru0943384722;fao93766109;11:45+_Delayed_Arrival;hel7439299980;fao93766109;12:05+_Departure;fao93766109;lis2323639855;12:30';
 
 const weekdays = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
-
 const openingHours = {
 	[weekdays[3]]: {
 		open: 12,
@@ -54,6 +53,83 @@ const restaurant = {
 		console.log(otherIngredients);
 	},
 };
+
+const airline = 'TAP Air Portugal';
+
+console.log(airline.toLowerCase());
+console.log(airline.toUpperCase());
+
+// Fix capitalization in name
+const passenger = 'jOnAS'; // Jonas
+const passengerLower = passenger.toLowerCase();
+const passengerCorrect = passengerLower[0].toUpperCase() + passengerLower.slice(1);
+
+// console.log(passenger);
+// console.log(passengerLower);
+console.log(passengerCorrect);
+
+// Comparing emails
+const email = 'hello@jonas.io';
+const loginEmail = '   Hello@Jonas.Io \n';
+
+// const lowerEmail = loginEmail.toLowerCase();
+// const trimmedEmail = lowerEmail.trim();
+
+const normalizedEmail = loginEmail.toLowerCase().trim();
+
+console.log(normalizedEmail);
+console.log(email === normalizedEmail);
+
+// Replacing
+const priceGB = '288,97£'
+
+
+
+/* Working with Strings - Part 1
+const airline = 'TAP Air Portugal';
+const plane = 'A320';
+
+console.log(plane[0]);
+console.log(plane[1]);
+console.log(plane[2]);
+console.log('B737'[0]);
+
+console.log(airline.length);
+console.log('B737'.length);
+
+console.log(airline.indexOf('r'));
+console.log(airline.lastIndexOf('r'));
+console.log(airline.indexOf('Portugal'));
+
+console.log(airline.slice(4));
+console.log(airline.slice(4, 7));
+
+console.log(airline.slice(0, airline.indexOf(' ')));
+console.log(airline.slice(airline.lastIndexOf(' ') + 1));
+
+console.log(airline.slice(-2));
+console.log(airline.slice(1, -1));
+
+function checkMiddleSeat(seat) {
+	// B and E are middle seats
+	const s = seat.slice(-1);
+
+	if (s === 'B' || s === 'E') {
+		console.log('You got the middle seat 😬');
+
+	} else {
+		console.log('You got lucky');
+	}
+}
+
+checkMiddleSeat('11B');
+checkMiddleSeat('23C');
+checkMiddleSeat('3E');
+
+console.log(new String('jonas'));
+console.log(typeof new String('jonas'));
+console.log(typeof new String('jonas').slice(1));
+*/
 
 /*
 const question = new Map([
