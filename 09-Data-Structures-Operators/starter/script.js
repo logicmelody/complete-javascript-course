@@ -54,6 +54,60 @@ const restaurant = {
 	},
 };
 
+// Split and join
+console.log('a+very+nice+string'.split('+'));
+console.log('Jonas Schmedtmann'.split(' '));
+
+const [firstName, lastName] = 'Jonas Schmedtmann'.split(' ');
+
+const newName = ['Mr.', firstName, lastName.toUpperCase()].join(' ');
+
+console.log(newName);
+
+const passenger = 'jessica ann smith davis';
+
+function capitalizeName(name) {
+	return name
+		.split(' ')
+		.map(name => capitalize(name))
+		// .map(name[0].toUpperCase() + name.slice(1))
+		.join(' ');
+}
+
+function capitalize(name) {
+	return name.replace(name[0], name[0].toUpperCase())
+}
+
+console.log(capitalizeName('jessica and smith davis'));
+console.log(capitalizeName('jonas schmedtmann'));
+
+// Padding
+const message = 'Go to gate 23';
+
+console.log(message.padStart(20, '+').padEnd(30, '+'));
+console.log('Jonas'.padStart(20, '+').padEnd(30, '+'));
+
+function maskCreditCard(number) {
+	const str = number + '';
+
+	return str.slice(-4).padStart(str.length, '*');
+}
+
+console.log(maskCreditCard(433784638647384));
+console.log(maskCreditCard('123442342242424'));
+
+// Repeat
+const message2 = 'Bad weather... All Departure Delayed... ';
+
+console.log(message2.repeat(5));
+
+function planesInLine(n) {
+	console.log(`There ate ${n} planes in line ${'✈'.repeat(n)}`);
+}
+
+planesInLine(5);
+planesInLine(10);
+
 /*
 const airline = 'TAP Air Portugal';
 
@@ -107,20 +161,20 @@ if (plane.startsWith('Airbus') && plane.endsWith('neo')) {
 */
 
 // Practice exercise
-const checkBaggage = function (items) {
-	const baggage = items.toLowerCase();
+// const checkBaggage = function (items) {
+// 	const baggage = items.toLowerCase();
 
-	if (baggage.includes('knife') || baggage.includes('gun')) {
-		console.log('You are NOT allowed on board');
+// 	if (baggage.includes('knife') || baggage.includes('gun')) {
+// 		console.log('You are NOT allowed on board');
 
-	} else {
-		console.log('Welcome aboard');
-	}
-}
+// 	} else {
+// 		console.log('Welcome aboard');
+// 	}
+// }
 
-checkBaggage('I have a laptop, some Food and a pocket Knife');
-checkBaggage('Socks and camera');
-checkBaggage('Get some snacks and a gun for protection');
+// checkBaggage('I have a laptop, some Food and a pocket Knife');
+// checkBaggage('Socks and camera');
+// checkBaggage('Get some snacks and a gun for protection');
 
 
 /* Working with Strings - Part 1
